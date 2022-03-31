@@ -1,3 +1,3 @@
 exports.config = {
-  mainContract: '0x67aD69d0246195ff03C8Db0F329B27408e24a746'
+  mainContract: "0x70Fb80A65DE4b6306b071b7af5c666715a2ccc27",
 };

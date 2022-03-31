@@ -14,7 +14,7 @@
     "@drizzle/store": "^1.5.0",
     "@hyperapp/router": "^0.7.2",
     "hyperapp": "^1.2.10",
-    "web3": "^1.2.1"
+    "web3": "^1.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

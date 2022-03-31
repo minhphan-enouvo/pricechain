@@ -25,15 +25,12 @@
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
-
-
   networks: {
-
     development: {
-     host: "127.0.0.1",     // Localhost (default: none)
-     port: 7545,            // Standard Ethereum port (default: none)
-     network_id: "5777",       // Any network (default: none)
-    }
+      host: "127.0.0.1", // Localhost (default: none)
+      port: 7545, // Standard Ethereum port (default: none)
+      network_id: "1337", // Any network (default: none)
+    },
   },
 
   // Set default mocha options here, use special reporters etc.
@@ -41,11 +38,12 @@ module.exports = {
     // timeout: 100000
   },
 
-  contracts_directory: "../contracts/",
+  contracts_directory: "./contracts/",
+  contracts_build_directory: "../contracts",
   // Configure your compilers
   compilers: {
     solc: {
-      version: "^0.4.17",    // Fetch exact version from solc-bin (default: truffle's version)
-    }
-  }
-}
+      version: "0.8.7", // Fetch exact version from solc-bin (default: truffle's version)
+    },
+  },
+};
