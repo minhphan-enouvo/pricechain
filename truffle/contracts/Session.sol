@@ -67,6 +67,7 @@ contract Session {
 
     // Necessary events
     event ProposePrice(address from, uint256 value, uint256 proposedPrice);
+    event SetFinalPrice(uint256 finalPrice);
 
     constructor(
         address _mainContract,
@@ -160,6 +161,7 @@ contract Session {
         }
 
         state = State.CLOSED;
+        emit SetFinalPrice(finalPrice);
     }
 
     // only Admin
